@@ -75,7 +75,7 @@ main{
   padding: 1rem 2rem 3rem;
 }
 
-.plot, .characters{
+.plot {
   font-family: "Jaro", ui-sans-serif, system-ui;
   width: 1100px;
   margin: 4rem auto;
@@ -90,7 +90,7 @@ main{
   line-height: 1.6;
   color: white;
 }
-.plot p, .characters gojo{
+.plot p, .characters gojo, .characters nanami, .characters megumi {
   font-size: 1.2rem;
   margin:.85rem 0;
   color:var(--text);
@@ -98,7 +98,7 @@ main{
   font-family: "Jaro", ui-sans-serif, system-ui;
 }
 
-.float-left {
+.plot .float-left {
   float: left;
   margin: 0 20px 20px 0;  /* space between img and text */
   width: 200px;           /* control size */
@@ -106,7 +106,7 @@ main{
   border-radius: 8px;
 }
 
-.float-right {
+.plot .float-right {
   float: right;
   width: 220px; height: auto;
   margin: 0 0 12px 16px;
@@ -125,4 +125,99 @@ main{
   border-top: 2px solid #fff;
   margin: 2rem 0;
   opacity: 0.3;
+}
+
+.characters{
+  font-family: "Jaro", ui-sans-serif, system-ui;
+  width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.characters h1 {
+  position: absolute;
+  top: 2rem;
+  left: 40%;
+  font-size: 3rem;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+  font-family: "Jaro", ui-sans-serif, system-ui;
+}
+.characters .float-left {
+  float: left;
+  margin: 0 20px 20px 0;  /* space between img and text */
+  width: 200px;           /* control size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.characters .float-right {
+  float: right;
+  width: 260px; height: auto;
+  margin: 0 0 12px 16px;
+  border-radius: 8px;
+}
+
+
+/* Japanese font */
+@font-face {
+  font-family: "Zomzi";
+  src: url("./assets/font/Zomzi.TTF") format("truetype");
+}
+.transcription {
+  font-family: "Zomzi";
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+ruby rt {
+  font-family: "Jaro", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  color: #eee;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer address {
+  font-style: normal; /* no italics */
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chip {
+  padding: 14px 40px;
+  background: #5a2280; /* purple pill */
+  color: white;
+  border-radius: 50px; /* pill shape */
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: grab;
+  letter-spacing: 0.08em;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dropzone {
+  width: 260px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
 }
