@@ -1,0 +1,128 @@
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; margin:0; }
+
+/* full bg image with control */
+.hero-bg{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 8%;
+  z-index: -1;
+  background: var(--bg-dark);
+}
+
+/* side nav */
+.side-nav{
+  position: fixed;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  gap: 20px;
+  padding: 18px 14px;
+  width: 64px;
+
+  background: rgba(7,12,28,.85);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+  backdrop-filter: blur(4px);
+}
+.nav-btn{
+  display:grid;
+  place-items:center;
+  width: 36px; height: 36px;
+  border-radius: 12px;
+  transition: transform .15s ease, filter .15s ease, background .15s ease;
+}
+.nav-btn img{ width: 26px; height: 26px; filter: drop-shadow(0 0 4px rgba(255,31,113,.35)); }
+.nav-btn:hover{
+  transform: translateY(-2px) scale(1.06);
+  background: rgba(255,255,255,.06);
+}
+
+/* title block */
+.title-wrap{
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 4;
+}
+
+.logo-jp{
+  height:80px;
+  width:auto;
+}
+
+.logo-en{
+  margin:0;
+  font-family: "Jaro", sans-serif;
+  font-weight: bolder;
+  letter-spacing: .06em;
+  font-size: 1vw;
+  color: #fff;
+}
+
+
+main{
+  display:block;
+  padding: 1rem 2rem 3rem;
+}
+
+.plot, .characters{
+  font-family: "Jaro", ui-sans-serif, system-ui;
+  width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.plot h2, .characters h2 {
+  font-size: 2rem;        /* around 16px */
+  line-height: 1.6;
+  color: white;
+}
+.plot p, .characters gojo{
+  font-size: 1.2rem;
+  margin:.85rem 0;
+  color:var(--text);
+  text-wrap:pretty;
+  font-family: "Jaro", ui-sans-serif, system-ui;
+}
+
+.float-left {
+  float: left;
+  margin: 0 20px 20px 0;  /* space between img and text */
+  width: 200px;           /* control size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.float-right {
+  float: right;
+  width: 220px; height: auto;
+  margin: 0 0 12px 16px;
+  border-radius: 8px;
+}
+
+/* clear the float at the end of the section */
+.season1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #fff;
+  margin: 2rem 0;
+  opacity: 0.3;
+}
