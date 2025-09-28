@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jaro:wdth,wght@75..125,400..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
-  <title>Jujutsu Kaisen</title>
+  <title>Jujutsu Kaisen Sorcerers</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <img src="assets/bg.png" alt="" class="hero-bg" />
     <!-- Left vertical pill nav -->
     <nav class="side-nav" aria-label="Main">
-    <a href="#" class="nav-btn" aria-label="Curses">
+    <a href="curses.html" class="nav-btn" aria-label="Curses">
       <img src="assets/spirit.png" alt="spirit" />
     </a>
     <a href="index.html" class="nav-btn" aria-label="Home">
@@ -30,7 +30,7 @@
     <a href="sorcerers.html" class="nav-btn" aria-label="Characters">
       <img src="assets/sorcerer.png" alt="characters" />
     </a>
-    <a href="#" class="nav-btn" aria-label="Techniques">
+    <a href="tech.html" class="nav-btn" aria-label="Techniques">
       <img src="assets/tech.png" alt="techniques" />
     </a>
   </nav>
@@ -43,7 +43,7 @@
       </h2>
       <p>
         <img src="./assets/gojo.jpg" alt="Gojo Satoru" class="float-right" />
-        Gojo Satoru is widely recognized as the strongest jujutsu sorcerer of the modern era, a title he more than
+        <u>Gojo Satoru</u> is widely recognized as the strongest jujutsu sorcerer of the modern era, a title he more than
         lives up to with his unmatched skill and overwhelming confidence. As a special grade sorcerer, he stands at the
         top of the hierarchy, often treating even the most dangerous curses as little more than warm-ups. He is the pride 
         of the Gojo Clan, and the first person in over four hundred years to inherit both the Limitless technique and
@@ -63,7 +63,7 @@
       </h2>
       <p>
         <img src="./assets/nanami.jpeg" alt="Kento Nanami" class="float-left" />
-        Nanami Kento is a grade 1 jujutsu sorcerer whose calm, methodical nature sets him apart from many of his peers.
+        <u>Nanami Kento</u> is a grade 1 jujutsu sorcerer whose calm, methodical nature sets him apart from many of his peers.
         Once a salaryman who abandoned the world of sorcery in pursuit of a quieter, more stable life, he eventually
         returned to the battlefield, driven by a sense of duty and the understanding that he could not ignore the
         suffering caused by curses. His pragmatic outlook and professional demeanor make him a sharp contrast to the
@@ -83,7 +83,7 @@
       </h2>
       <p>
         <img src="./assets/megumi.jpeg" alt="Megumi Fushiguro" class="float-right" />
-        Fushiguro Megumi is a first-year student at Tokyo Jujutsu High and one of the most promising young
+        <u>Fushiguro Megumi</u> is a first-year student at Tokyo Jujutsu High and one of the most promising young
         sorcerers of his generation. Reserved and serious beyond his years, Megumi often acts as the steady
         counterbalance to Yuji Itadori’s impulsive energy and Nobara Kugisaki’s fiery confidence. He inherited
         the Ten Shadows Technique of the Zen’in Clan, granting him the ability to summon and control shikigami —
@@ -104,7 +104,7 @@
       </h2>
       <p>
         <img src="./assets/nobara.jpeg" alt="Kento Nanami" class="float-left" />
-        Nobara Kugisaki is a first-year student at Tokyo Jujutsu High whose fiery personality and
+        <u>Nobara Kugisaki</u> is a first-year student at Tokyo Jujutsu High whose fiery personality and
         unshakable confidence make her a force to be reckoned with both on and off the battlefield.
         Hailing from a small rural town she despised, Nobara left for the city determined to live life on her own terms,
         refusing to let anyone look down on her or dictate her choices. She wields a unique blend of hammer, nails,
@@ -119,17 +119,17 @@
           of resilience and independence in a world consumed by curses.</p>
         </section>
   </article>
-   <div class="container">
-     
-      <div id="chip" draggable="true" class="chip">
+
+  <div class="container">
+    <div id="chip" draggable="true" class="chip">
         Gojo
-      </div>
+    </div>
 
 
-      <div id="dropzone" class="dropzone">
+    <div id="dropzone" class="dropzone">
         Drop Gojo here
       </div>
-    </div>
+  </div>
 
   <script>
     const chip = document.getElementById("chip");
@@ -139,16 +139,17 @@
 
     dropzone.addEventListener("drop", e => {
       e.preventDefault();
-    dropzone.innerHTML = "";   // clear the text "Drop Satoru here"
+    dropzone.innerHTML = "";   // clear the text "Drop Gojo here"
     dropzone.appendChild(chip); // move chip inside the box
   });
 
   </script>
   </main>
-    <footer class="footer">
-      <address>
-        <p>Created by Mariia Kim</p>
-      </address>
+  <footer class="footer">
+    <address>
+      <p>Created by Mariia Kim</p>
+      <p><a href="https://github.com/k1mmari/comp484-project1"</a>Visit me Here</p>
+    </address>
 </footer>
 </body>
 </html>

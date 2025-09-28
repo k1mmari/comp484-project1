@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Jaro font -->
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:wdth,wght@75..125,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Jujutsu Kaisen Curses</title>
+</head>
+
+<body>
+  <main>
+    <header class="title-wrap">
+    <h1 class="logo-en">Jujutsu Kaisen</h1>
+    <img class="logo-jp" src="./assets/jjk_logo.png" alt="呪術廻戦" />
+    </header>
+
+    <img src="assets/bg.png" alt="" class="hero-bg" />
+    <!-- Left vertical pill nav -->
+    <nav class="side-nav" aria-label="Curses">
+    <a href="curses.html" class="nav-btn" aria-label="Curses">
+      <img src="assets/spirit.png" alt="spirit" />
+    </a>
+    <a href="index.html" class="nav-btn" aria-label="Home">
+      <img src="assets/home.png" alt="home" />
+    </a>
+    <a href="sorcerers.html" class="nav-btn" aria-label="Characters">
+      <img src="assets/sorcerer.png" alt="characters" />
+    </a>
+    <a href="tech.html" class="nav-btn" aria-label="Techniques">
+      <img src="assets/tech.png" alt="techniques" />
+    </a>
+  </nav>
+  
+  <article class="curses">
+    <h1>
+        <ruby class="curses_name">呪霊<rt>Jurei</rt></ruby>
+    </h1>
+
+    <section class="description">
+        <p>Cursed Spirits are a race of spiritual beings invisible to humans, incarnated from the cursed energy
+        that leaks out of humans over time due to their negative emotions. Cursed spirits haunt and bring harm
+        to humanity and are consequently the primary targets of jujutsu sorcerers and their exorcist work.</p>
+    
+        <hr class="divider">
+    </section>
+
+    <section class = "kaju_onryo">
+        <h2>
+            <ruby class="curses_ruby">過呪怨霊<rt>Kaju Onryo</rt></ruby>
+        </h2>
+        <p>
+            Vengeful Cursed Spirit: A cursed spirit created when humans become a curse after death.
+            Those whose deaths are cursed have the possibility of having their spirit corrupted and transformed
+            into a vengeful spirit.</p>
+    </section>
+      
+    <section class = "kasoju">
+        <h2>
+            <ruby class="curses_ruby">仮想呪怨霊<rt>Kaso-ju Onryo</rt></ruby>
+        </h2>
+        <p>
+            Imaginary Vengegul Cursed Spirit: A cursed spirit manifested from the cumulative fear of the masses.
+            When many people share an image of fear, such as famous yokai or ghost stories like the Nine Tailed Fox,
+            an Imaginary Vengeful Spirit can form.</p>
+    </section>
+
+
+    <section class = "kishin">
+        <h2>
+            <ruby class="curses_ruby">仮想鬼神<rt>Kasō no Kishin</rt></ruby>
+        </h2>
+        <p>
+            The Imaginary Demon God is a fearsome manifestation of humanity’s deepest
+            collective dread. Despite appearing as a towering figure with two faces and
+            four arms, it is not a true deity but rather a curse born entirely from
+            imagination and fear. Legends describe it as embodying both destruction and
+            judgment, its many limbs symbolizing overwhelming strength and an inescapable
+            presence. Though human in origin, the Kasō no Kishin transcends ordinary cursed
+            spirits, representing how powerful fear alone can distort reality and give rise
+            to beings that rival the might of ancient gods.</p>
+    </section>
+
+        <section class = "shipper">
+        <h2>
+            <ruby class="curses_ruby">疾病呪霊<rt>Shipper Jurei</rt></ruby>
+        </h2>
+        <p>
+            Disease Cursed Spirit: Plague and general sickness are concepts constantly cursed by humanity,
+            resulting in powerful disease curses. These type of cursed spirits can use cursed techniques to
+            infect humans with their respective diseases to curse and kill them.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section class="special-grades">
+        <h2>Special Grades</h2>
+        <div class="grade-wrapper">
+            <div class="grade-card">
+                <img src="./assets/mahito.jpeg" alt="Mahito">
+                <p>
+                    <ruby class="curses_ruby">真人<rt>Mahito</rt></ruby>
+                </p>
+            </div>
+            <div class="grade-card">
+                <img src="./assets/jogo.jpeg" alt="Jogo">
+                <p>
+                    <ruby class="curses_ruby">漏瑚<rt>Jogo</rt></ruby>
+                </p>
+            </div>
+            <div class="grade-card">
+                <img src="./assets/hanami.jpeg" alt="Hanami">
+                <p>
+                    <ruby class="curses_ruby">花御<rt>Hanami</rt></ruby>
+                </p>
+            </div>
+            <div class="grade-card">
+                <img src="./assets/Dagon.jpeg" alt="Dagon">
+                <p>
+                    <ruby class="curses_ruby">陀艮<rt>Dagon</rt></ruby>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="mahito-input">
+        <form id="hate-form" action="" method="post">
+            <label for="mahitoName">Input Mahito’s name if you hate him:</label>
+            <input
+                type="text"
+                id="mahitoName"
+                name="mahitoName"
+                minlength="6"
+                required
+                placeholder="Type: Mahito"
+            >
+        <button type="submit">Submit</button>
+        <p id="result" aria-live="polite"></p>
+    </form>
+</section>
+</article>
+    
+    <script>
+        const form = document.getElementById('hate-form');
+        const input = document.getElementById('mahitoName');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', (e) => {
+            if (!input.checkValidity()) {
+            e.preventDefault();          // stay on the page
+            input.reportValidity();      // show the browser’s message
+            return;
+        }
+        e.preventDefault();
+        result.textContent = 'Thanks. Justice for Nanami. 😤';
+        });
+    </script>
+    </main>
+    <footer class="footer">
+        <address>
+            <p>Created by Mariia Kim</p>
+            <p><a href="https://github.com/k1mmari/comp484-project1"</a>Visit me Here</p>
+        </address>
+    </footer>
+</body>
+</html>

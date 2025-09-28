@@ -75,7 +75,7 @@ main{
   padding: 1rem 2rem 3rem;
 }
 
-.plot {
+.plot, .curses {
   font-family: "Jaro", ui-sans-serif, system-ui;
   width: 1100px;
   margin: 4rem auto;
@@ -98,7 +98,7 @@ main{
   font-family: "Jaro", ui-sans-serif, system-ui;
 }
 
-.plot .float-left {
+.plot .float-left, .characters .float-left, .tech .float-left {
   float: left;
   margin: 0 20px 20px 0;  /* space between img and text */
   width: 200px;           /* control size */
@@ -106,7 +106,7 @@ main{
   border-radius: 8px;
 }
 
-.plot .float-right {
+.plot .float-right, .characters .float-right, .tech .float-right {
   float: right;
   width: 220px; height: auto;
   margin: 0 0 12px 16px;
@@ -127,7 +127,7 @@ main{
   opacity: 0.3;
 }
 
-.characters{
+.characters {
   font-family: "Jaro", ui-sans-serif, system-ui;
   width: 1000px;
   margin: 4rem auto;
@@ -137,7 +137,7 @@ main{
   line-height: 1.6;
 }
 
-.characters h1 {
+.characters h1, .tech h1 {
   position: absolute;
   top: 2rem;
   left: 40%;
@@ -187,10 +187,14 @@ ruby rt {
   font-size: 0.9rem;
 }
 
-footer address {
+.footer address {
   font-style: normal; /* no italics */
 }
-
+address a {
+  color: #ff5faf;   /* hot pink instead of blue */
+  text-decoration: none;  /* removes underline */
+}
+/* for draggable */
 .container {
   display: flex;
   gap: 20px;
@@ -221,3 +225,142 @@ footer address {
   border-radius: 12px;
   background: rgba(255,255,255,0.05);
 }
+
+.curses {
+  font-family: "Jaro", ui-sans-serif, system-ui;
+  width: 1100px;
+  margin: 6rem auto;
+  padding: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.curses h1 {
+  position: absolute;
+  top: 0.2rem;
+  left: 45%;
+  font-size: 3rem;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+  font-family: "Jaro", ui-sans-serif, system-ui;
+}
+
+.curses, .tech {
+  font-family: "Jaro", ui-sans-serif, system-ui;
+  width: 1100px;
+  margin: 6rem auto;
+  padding: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.curses_name, .tech_name {
+  font-family: "Zomzi";
+  font-size: 5rem;
+  margin-top: 0.5rem;
+}
+.description  {
+  font-family: "Jaro", ui-sans-serif, system-ui;
+  width: 1100px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 3rem;
+}
+.kaju_onryo p, .kasoju p, .kishin p, .shipper p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  font-family: "Jaro", ui-sans-serif, system-ui;
+}
+.curses_ruby, .technique ruby, .fave_techniques ruby {
+  font-family: "Zomzi";
+  font-size: 3rem;
+}
+
+.special-grades {
+  text-align: center;       /* center the heading */
+  margin: 2rem 0;
+}
+
+.special-grades h2 {
+  font-family: "Jaro", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.grade-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* so it doesn’t break on smaller screens */
+}
+
+.grade-card {
+  text-align: center;
+}
+
+.grade-card img {
+  width: 150px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.mahito-input, .quiz { 
+  text-align:center; 
+  margin:2rem 0; 
+}
+.mahito-input label, .gojo-tech label {
+  display:block;
+  margin-bottom:.5rem;
+  font-weight:700;
+}
+.mahito-input input, .quiz input {
+  width:320px;
+  padding:.8rem 1rem;
+  border-radius:999px;
+  border:2px solid transparent;
+  background:#6a1b9a; color:#fff;
+  text-align:center;
+}
+.mahito-input button, .quiz button {
+  margin-top:.6rem;
+  padding:.6rem 1rem;
+  border:0;
+  border-radius:10px;
+  background:#6a1b9a;
+  color:#fff; font-weight:700;
+  cursor:pointer;
+}
+
+.cursed-techniques {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cursed-techniques .technique {
+  flex: 1;
+  max-width: 400px;
+}
+
+.cursed-techniques h3, .fave-techniques h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cursed-techniques p{
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+
+
