@@ -1,4 +1,4 @@
-# Jujutsu Kaisen Website
+# Jujutsu Kaisen Website -- https://k1mmari.github.io/comp484-project1/
 
 A simple HTML, CSS, and JavaScript website inspired by *Jujutsu Kaisen*.  
 This project was created for a class assignment and consists of **4 pages**:
